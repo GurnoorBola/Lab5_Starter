@@ -51,7 +51,7 @@ function init() {
         }
     }
 
-    range.addEventListener('change', setVolume);
+    range.addEventListener('input', setVolume);
     setVolume();
 
     const playButton = document.querySelector('button');
