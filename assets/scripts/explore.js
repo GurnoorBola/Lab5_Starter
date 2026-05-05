@@ -7,7 +7,7 @@ function init() {
 
     const voiceSelect = document.getElementById('voice-select');
 
-    speechSynthesis.addEventListener('voiceschanged', () => {
+    speechSynthesis.addEventListener('voiceschanged', function() {
         const voices = speechSynthesis.getVoices();
 
         for (let voice of voices) {
